@@ -1,15 +1,18 @@
+/*Bisection mrthod*/
 #include <stdio.h>
 #include <math.h>
 
 double f(double x)
 {
-    return(x*x-2.0);
+    return(pow(x,3) * a - pow(x,2) * b - pow(x,1) * c + d);
 }
 int main(void){
     int n=0;
-    double a,b,c,fa,fc,er=1.0e-9;
-    a=0.0;
-    b=2.0;
+    double a,b,c,d,fa,fc,er=1.0e-9;
+    a=256.0;
+    b=320.0;
+    c=308.0;
+    d=147.0;
     do {
         fa=f(a);
         c=(a+b)/2.0;
